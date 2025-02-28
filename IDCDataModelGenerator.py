@@ -68,7 +68,7 @@ if verbose:
                     print(f"Terms: {termvalue[1].get_attr_dict()}")
 
 
-#bento_mdf.MDFWriter(idc_mdf).write_mdf(idcmodelfile)
+bento_mdf.MDFWriter(idc_mdf).write_mdf(idcmodelfile)
 #print(yaml.dump(bento_mdf.MDFWriter(idc_mdf).write_mdf()))
 #print(yaml.dump(bento_mdf.MDFWriter(idc_mdf).mdf, indent=4))
 #with open(idcmodelfile, 'w') as f:
