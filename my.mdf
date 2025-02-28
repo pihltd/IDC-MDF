@@ -1,0 +1,1405 @@
+Handle: IDC
+Nodes:
+    MultiplexMicroscopy:
+        Props:
+        - MultiplexMicroscopy_id
+        - acquisition_method_type
+        - antibody_name
+        - catalog_number
+        - channel_id
+        - channel_metadata_file_url_in_cds
+        - channel_metadata_filename
+        - channel_name
+        - clone
+        - concentration
+        - crdc_id
+        - cycle_number
+        - dilution
+        - embedding_medium
+        - emission_bandwidth
+        - emission_wavelength
+        - excitation_bandwidth
+        - excitation_wavelength
+        - fluorophore
+        - imaging_assay_type
+        - immersion
+        - lens_numerical_aperture
+        - lot
+        - metal_isotope_element_abbreviation
+        - metal_isotope_element_mass
+        - nominal_magnification
+        - objective
+        - oligo_barcode_lower_strand
+        - oligo_barcode_upper_strand
+        - physical_size_x
+        - physical_size_y
+        - physical_size_z
+        - pyramid
+        - rrid_identifier
+        - size_c
+        - size_t
+        - size_x
+        - size_y
+        - size_z
+        - staining_method
+        - sub_cycle_number
+        - target_name
+        - tissue_fixative
+        - tumor_tissue_type
+        - working_distance
+    NonDICOMCTimages:
+        Props:
+        - CTAquisitionProtocolElement_ctdiPhantomTypeCode
+        - CTAquisitionProtocolElement_ctdiVol
+        - CTAquisitionProtocolElement_exposureModulationType_Code
+        - CTAquisitionProtocolElement_gantryDetectorTilt
+        - CTAquisitionProtocolElement_kVp
+        - CTAquisitionProtocolElement_singleCollimationWidth
+        - CTAquisitionProtocolElement_spiralPitchFactor
+        - CTAquisitionProtocolElement_totalCollimationWidth
+        - CTImageReconstructionProtocolElement_convolutionKernel
+        - CTImageReconstructionProtocolElement_convolutionKernelGroupCode
+        - NonDICOMCTimages_id
+        - crdc_id
+    NonDICOMMRimages:
+        Props:
+        - MRImageAcquisitionProtocolElement_acquisitionContrastCode
+        - MRImageAcquisitionProtocolElement_arterialSpinLabelingContrastCode
+        - MRImageAcquisitionProtocolElement_diffusionBValue
+        - MRImageAcquisitionProtocolElement_diffusionDirectionalityCode
+        - MRImageAcquisitionProtocolElement_echoPlanarPulseSequenceIndicator
+        - MRImageAcquisitionProtocolElement_echoPulseSequenceCategoryCode
+        - MRImageAcquisitionProtocolElement_inversionRecoveryIndicator
+        - MRImageAcquisitionProtocolElement_magneticFieldStrength
+        - MRImageAcquisitionProtocolElement_multipleSpinEchoIndicator
+        - MRImageAcquisitionProtocolElement_phaseContrastIndicator
+        - MRImageAcquisitionProtocolElement_pulseSequenceName
+        - MRImageAcquisitionProtocolElement_resonantNucleusCode
+        - MRImageAcquisitionProtocolElement_saturationRecoveryIndicator
+        - MRImageAcquisitionProtocolElement_spectrallySelectedSuppressionCode
+        - MRImageAcquisitionProtocolElement_steadyStatePulseSequenceCode
+        - MRImageAcquisitionProtocolElement_timeOfFlightContrastIndicator
+        - MRImageReconstructionProtocolElement_complexImageComponentCode
+        - NonDICOMMRimages_id
+        - crdc_id
+    NonDICOMPETimages:
+        Props:
+        - NonDICOMPETimages_id
+        - PETImagingAcquisitionProtocolElement_gantryDetectorTilt
+        - Radiopharmaceutical_radionuclideCode
+        - crdc_id
+    NonDICOMpathologyImages:
+        Props:
+        - NonDICOMpathologyImages_id
+        - acquisition_method_type
+        - crdc_id
+        - embedding_medium
+        - immersion
+        - lens_numerical_aperture
+        - nominal_magnification
+        - objective
+        - staining_method
+        - tissue_fixative
+        - tumor_tissue_type
+    NonDICOMradiologyAllModalities:
+        Props:
+        - NonDICOMradiologyAllModalities_id
+        - crdc_id
+        - performed_imaging_study_acquisitionTypeCode
+        - performed_imaging_study_admittingDiagnosisCode
+        - performed_imaging_study_algorithmCode
+        - performed_imaging_study_bodyPositionCode
+        - performed_imaging_study_cardiacSynchronizationTechniqueCode
+        - performed_imaging_study_dataCollectionDiameter
+        - performed_imaging_study_description
+        - performed_imaging_study_lossyImageCompressionIndicator
+        - performed_imaging_study_nonAcquisitionModalitiesInStudyCode
+        - performed_imaging_study_primaryAnatomicSiteCode
+        - performed_imaging_study_reconstructionDiameter
+        - performed_imaging_study_reconstructionFieldOfViewHeight
+        - performed_imaging_study_reconstructionFieldOfViewWidth
+        - performed_imaging_study_reconstructionInterval
+        - performed_imaging_study_respiratoryMotionTechniqueCode
+        - performed_imaging_study_sliceThickness
+        - performed_imaging_study_summary
+    image:
+        Props:
+        - citation_or_DOI
+        - crdc_id
+        - de_identification_method_description
+        - de_identification_method_type
+        - de_identification_software
+        - image_modality
+        - imaging_equipment_manufacturer
+        - imaging_equipment_model
+        - imaging_protocol
+        - imaging_software
+        - license
+        - longitudinal_temporal_event_offset
+        - longitudinal_temporal_event_type
+        - organ_or_tissue
+        - performed_imaging_study_typeCode
+        - species
+        - study_link_id
+PropDefinitions:
+    CTAquisitionProtocolElement_ctdiPhantomTypeCode:
+        Enum: []
+        Term:
+        -   Code: '14612683'
+            Origin: caDSR
+            Value: Imaging Technique CTDI Phantom Type Sequence of Items Text
+            Version: '1.00'
+    CTAquisitionProtocolElement_ctdiVol:
+        Enum: []
+        Term:
+        -   Code: '3882991'
+            Origin: caDSR
+            Value: Computed Tomography Dose Index Volume Quantity 8 Byte Number
+            Version: '1.00'
+    CTAquisitionProtocolElement_exposureModulationType_Code:
+        Enum: []
+        Term:
+        -   Code: '14617524'
+            Origin: caDSR
+            Value: Imaging Technique Exposure Modulation Type
+            Version: '1.00'
+    CTAquisitionProtocolElement_gantryDetectorTilt:
+        Enum: []
+        Term:
+        -   Code: '2656117'
+            Origin: caDSR
+            Value: Image Gantry Detector Tilt 16 Character Number
+            Version: '1.00'
+    CTAquisitionProtocolElement_kVp:
+        Enum: []
+        Term:
+        -   Code: '2904496'
+            Origin: caDSR
+            Value: Image Kilovolt Peak Float 16 Number
+            Version: '1.00'
+    CTAquisitionProtocolElement_singleCollimationWidth:
+        Enum: []
+        Term:
+        -   Code: '2903347'
+            Origin: caDSR
+            Value: Image Single Collimation Width 8 Byte Millimeter Number
+            Version: '1.00'
+    CTAquisitionProtocolElement_spiralPitchFactor:
+        Enum: []
+        Term:
+        -   Code: '2414556'
+            Origin: caDSR
+            Value: Computed Tomography Pitch Factor Number
+            Version: '1.00'
+    CTAquisitionProtocolElement_totalCollimationWidth:
+        Enum: []
+        Term:
+        -   Code: '2903328'
+            Origin: caDSR
+            Value: Image Total Collimation Width 8 Byte Millimeter Number
+            Version: '1.00'
+    CTImageReconstructionProtocolElement_convolutionKernel:
+        Enum: []
+        Term:
+        -   Code: '2656119'
+            Origin: caDSR
+            Value: Image Convolution Kernel 16 Character Text
+            Version: '1.00'
+    CTImageReconstructionProtocolElement_convolutionKernelGroupCode:
+        Enum: []
+        Term:
+        -   Code: '14617525'
+            Origin: caDSR
+            Value: Imaging Technique Convolution Kernel Group Name
+            Version: '1.00'
+    MRImageAcquisitionProtocolElement_acquisitionContrastCode:
+        Enum: []
+        Term:
+        -   Code: '14616428'
+            Origin: caDSR
+            Value: Image Acquisition Contrast Type
+            Version: '1.00'
+    MRImageAcquisitionProtocolElement_arterialSpinLabelingContrastCode:
+        Enum: []
+        Term:
+        -   Code: '14616429'
+            Origin: caDSR
+            Value: Imaging Technique Arterial Spin Labeling Contrast Name
+            Version: '1.00'
+    MRImageAcquisitionProtocolElement_diffusionBValue:
+        Enum: []
+        Term:
+        -   Code: '14607706'
+            Origin: caDSR
+            Value: Imaging Technique MR Diffusion B Value Number
+            Version: '1.00'
+    MRImageAcquisitionProtocolElement_diffusionDirectionalityCode:
+        Enum: []
+        Term:
+        -   Code: '14616426'
+            Origin: caDSR
+            Value: Imaging Technique Diffusion Directionality Type
+            Version: '1.00'
+    MRImageAcquisitionProtocolElement_echoPlanarPulseSequenceIndicator:
+        Enum: []
+        Term:
+        -   Code: '14612651'
+            Origin: caDSR
+            Value: Image Acquisition Echo Planar Pulse Sequence Indicator
+            Version: '1.00'
+    MRImageAcquisitionProtocolElement_echoPulseSequenceCategoryCode:
+        Enum: []
+        Term:
+        -   Code: '14645641'
+            Origin: caDSR
+            Value: Image Acquisition Spin-Echo Pulse Sequence Code Category
+            Version: '1.00'
+    MRImageAcquisitionProtocolElement_inversionRecoveryIndicator:
+        Enum: []
+        Term:
+        -   Code: '14607722'
+            Origin: caDSR
+            Value: Image Acquisition Inversion Recovery Indicator
+            Version: '1.00'
+    MRImageAcquisitionProtocolElement_magneticFieldStrength:
+        Enum: []
+        Term:
+        -   Code: '14607707'
+            Origin: caDSR
+            Value: Imaging Technique Magnetic Field Strength Number
+            Version: '1.00'
+    MRImageAcquisitionProtocolElement_multipleSpinEchoIndicator:
+        Enum: []
+        Term:
+        -   Code: '14608595'
+            Origin: caDSR
+            Value: Imaging Technique Multiple Spin Echo Indicator
+            Version: '1.00'
+    MRImageAcquisitionProtocolElement_phaseContrastIndicator:
+        Enum: []
+        Term:
+        -   Code: '14608601'
+            Origin: caDSR
+            Value: Image Phase Contrast Indicator
+            Version: '1.00'
+    MRImageAcquisitionProtocolElement_pulseSequenceName:
+        Enum: []
+        Term:
+        -   Code: '14608594'
+            Origin: caDSR
+            Value: Image Acquisition Pulse Sequence Name Text
+            Version: '1.00'
+    MRImageAcquisitionProtocolElement_resonantNucleusCode:
+        Enum: []
+        Term:
+        -   Code: '14616427'
+            Origin: caDSR
+            Value: Image Acquisition Resonant Nucleus Type
+            Version: '1.00'
+    MRImageAcquisitionProtocolElement_saturationRecoveryIndicator:
+        Enum: []
+        Term:
+        -   Code: '14612652'
+            Origin: caDSR
+            Value: Imaging Technique Saturation Recovery Indicator
+            Version: '1.00'
+    MRImageAcquisitionProtocolElement_spectrallySelectedSuppressionCode:
+        Enum: []
+        Term:
+        -   Code: '14616431'
+            Origin: caDSR
+            Value: Imaging Technique Spectrally Selected Suppression Type
+            Version: '1.00'
+    MRImageAcquisitionProtocolElement_steadyStatePulseSequenceCode:
+        Enum: []
+        Term:
+        -   Code: '14616430'
+            Origin: caDSR
+            Value: Image Acquisition Steady State Pulse Sequence Type
+            Version: '1.00'
+    MRImageAcquisitionProtocolElement_timeOfFlightContrastIndicator:
+        Enum: []
+        Term:
+        -   Code: '14608649'
+            Origin: caDSR
+            Value: Imaging Technique Time of Flight Contrast Indicator
+            Version: '1.00'
+    MRImageReconstructionProtocolElement_complexImageComponentCode:
+        Enum: []
+        Term:
+        -   Code: '14616432'
+            Origin: caDSR
+            Value: Imaging Technique Complex Image Component Type
+            Version: '1.00'
+    MultiplexMicroscopy_id:
+        Enum: []
+    NonDICOMCTimages_id:
+        Enum: []
+    NonDICOMMRimages_id:
+        Enum: []
+    NonDICOMPETimages_id:
+        Enum: []
+    NonDICOMpathologyImages_id:
+        Enum: []
+    NonDICOMradiologyAllModalities_id:
+        Enum: []
+    PETImagingAcquisitionProtocolElement_gantryDetectorTilt:
+        Enum: []
+        Term:
+        -   Code: '2656117'
+            Origin: caDSR
+            Value: Image Gantry Detector Tilt 16 Character Number
+            Version: '1.00'
+    Radiopharmaceutical_radionuclideCode:
+        Enum: []
+        Term:
+        -   Code: '14612653'
+            Origin: caDSR
+            Value: Imaging Technique Radionuclide Code Text
+            Version: '1.00'
+    acquisition_method_type:
+        Enum: []
+        Term:
+        -   Code: '6626651'
+            Origin: caDSR
+            Value: Biospecimen Acquisition Method Type
+            Version: '2.00'
+    antibody_name:
+        Enum: []
+        Term:
+        -   Code: '14765184'
+            Origin: caDSR
+            Value: Tissue Slide IHC Antibody Used Type
+            Version: '1.00'
+    catalog_number:
+        Enum: []
+        Term:
+        -   Code: '14767261'
+            Origin: caDSR
+            Value: Multiplex Imaging Vendor Catalog Number Text
+            Version: '1.00'
+    channel_id:
+        Enum: []
+        Term:
+        -   Code: '14765171'
+            Origin: caDSR
+            Value: OME Tagged Image File Format Channel Identifier
+            Version: '1.00'
+    channel_metadata_file_url_in_cds:
+        Enum: []
+        Term:
+        -   Code: '11556141'
+            Origin: caDSR
+            Value: Electronic File Pathname Text
+            Version: '1.00'
+    channel_metadata_filename:
+        Enum: []
+        Term:
+        -   Code: '7787678'
+            Origin: caDSR
+            Value: Channel Analysis Metadata Electronic File Name Text
+            Version: '1.00'
+    channel_name:
+        Enum: []
+        Term:
+        -   Code: '14765172'
+            Origin: caDSR
+            Value: OME Tagged Image File Format Channel Name
+            Version: '1.00'
+    citation_or_DOI:
+        Enum: []
+        Term:
+        -   Code: '7787673'
+            Origin: caDSR
+            Value: Raw Data Protocol Or Digital Object Identifier Text
+            Version: '1.00'
+    clone:
+        Enum: []
+        Term:
+        -   Code: '14767258'
+            Origin: caDSR
+            Value: Multiplex Imaging Clone Unique Identifier
+            Version: '1.00'
+    concentration:
+        Enum: []
+        Term:
+        -   Code: '14768386'
+            Origin: caDSR
+            Value: Multiplex Imaging Final Concentration Number
+            Version: '1.00'
+    crdc_id:
+        Enum: []
+    cycle_number:
+        Enum: []
+        Term:
+        -   Code: '14765176'
+            Origin: caDSR
+            Value: Multiplex Imaging Reagent Cycle Number Integer
+            Version: '1.00'
+    de_identification_method_description:
+        Enum: []
+        Term:
+        -   Code: '14612655'
+            Origin: caDSR
+            Value: Deidentification Method Description Text
+            Version: '1.00'
+    de_identification_method_type:
+        Enum: []
+        Term:
+        -   Code: '14607284'
+            Origin: caDSR
+            Value: Deidentification Method Type
+            Version: '1.00'
+    de_identification_software:
+        Enum: []
+        Term:
+        -   Code: '14612658'
+            Origin: caDSR
+            Value: Deidentification Software Name Text
+            Version: '1.00'
+    dilution:
+        Enum: []
+        Term:
+        -   Code: '14767270'
+            Origin: caDSR
+            Value: Multiplex Imaging Final Dilution Ratio Number
+            Version: '1.00'
+    embedding_medium:
+        Enum: []
+        Term:
+        -   Code: '8037927'
+            Origin: caDSR
+            Value: Biospecimen Collection Medium Type
+            Version: '1.00'
+    emission_bandwidth:
+        Enum: []
+        Term:
+        -   Code: '14765193'
+            Origin: caDSR
+            Value: Multiplex Imaging Emission Bandwidth Number
+            Version: '1.00'
+    emission_wavelength:
+        Enum: []
+        Term:
+        -   Code: '14767264'
+            Origin: caDSR
+            Value: Multiplex Imaging Emission Wavelength Number
+            Version: '1.00'
+    excitation_bandwidth:
+        Enum: []
+        Term:
+        -   Code: '14765190'
+            Origin: caDSR
+            Value: Multiplex Imaging Excitation Bandwidth Number
+            Version: '1.00'
+    excitation_wavelength:
+        Enum: []
+        Term:
+        -   Code: '14765187'
+            Origin: caDSR
+            Value: Multiplex Imaging Excitation Wavelength Number
+            Version: '1.00'
+    fluorophore:
+        Enum: []
+        Term:
+        -   Code: '14767255'
+            Origin: caDSR
+            Value: Multiplex Imaging Fluorescent Dye Text
+            Version: '1.00'
+    image_modality:
+        Enum: []
+        Term:
+        -   Code: '12137353'
+            Origin: caDSR
+            Value: Imaging Technology DICOM Modality Type
+            Version: '1.00'
+    imaging_assay_type:
+        Enum: []
+        Term:
+        -   Code: '7789196'
+            Origin: caDSR
+            Value: Imaging Assay Technology Type
+            Version: '1.00'
+    imaging_equipment_manufacturer:
+        Enum: []
+        Term:
+        -   Code: '2866141'
+            Origin: caDSR
+            Value: Equipment Manufacturer Name Text
+            Version: '1.00'
+    imaging_equipment_model:
+        Enum: []
+        Term:
+        -   Code: '2413274'
+            Origin: caDSR
+            Value: Equipment Manufacturer Model Name Text
+            Version: '2.10'
+    imaging_protocol:
+        Enum: []
+        Term:
+        -   Code: '7787673'
+            Origin: caDSR
+            Value: Raw Data Protocol Or Digital Object Identifier Text
+            Version: '1.00'
+    imaging_software:
+        Enum: []
+        Term:
+        -   Code: '2413278'
+            Origin: caDSR
+            Value: Equipment Software Version Text
+            Version: '1.20'
+    immersion:
+        Enum: []
+        Term:
+        -   Code: '8058286'
+            Origin: caDSR
+            Value: Microscope Device Immersion Medium Type
+            Version: '1.00'
+    lens_numerical_aperture:
+        Enum: []
+        Term:
+        -   Code: '7788942'
+            Origin: caDSR
+            Value: Microscope Device Lens Numerical Aperture Float Value
+            Version: '1.00'
+    license:
+        Enum: []
+        Term:
+        -   Code: '14902606'
+            Origin: caDSR
+            Value: Data Collection License Type
+            Version: '1.00'
+    longitudinal_temporal_event_offset:
+        Enum: []
+        Term:
+        -   Code: '14612661'
+            Origin: caDSR
+            Value: Longitudinal Study Temporal Offset Number
+            Version: '1.00'
+    longitudinal_temporal_event_type:
+        Enum: []
+        Term:
+        -   Code: '14670294'
+            Origin: caDSR
+            Value: Longitudinal Study Temporal Event Type
+            Version: '1.00'
+    lot:
+        Enum: []
+        Term:
+        -   Code: '14769695'
+            Origin: caDSR
+            Value: Multiplex Imaging Vendor Lot Number Text
+            Version: '1.00'
+    metal_isotope_element_abbreviation:
+        Enum: []
+        Term:
+        -   Code: '14765198'
+            Origin: caDSR
+            Value: Multiplex Imaging Isotope Abbreviation Name
+            Version: '1.00'
+    metal_isotope_element_mass:
+        Enum: []
+        Term:
+        -   Code: '14765201'
+            Origin: caDSR
+            Value: Multiplex Imaging Isotope Element Number Identifier
+            Version: '1.00'
+    nominal_magnification:
+        Enum: []
+        Term:
+        -   Code: '7788940'
+            Origin: caDSR
+            Value: Microscope Device Nominal Magnification Float Value
+            Version: '1.00'
+    objective:
+        Enum: []
+        Term:
+        -   Code: '7788935'
+            Origin: caDSR
+            Value: Microscope Device Objective Lens Text
+            Version: '1.00'
+    oligo_barcode_lower_strand:
+        Enum: []
+        Term:
+        -   Code: '14765208'
+            Origin: caDSR
+            Value: Multiplex Imaging Oligonucleotide Barcode Lower Strand Text
+            Version: '1.00'
+    oligo_barcode_upper_strand:
+        Enum: []
+        Term:
+        -   Code: '14765205'
+            Origin: caDSR
+            Value: Multiplex Imaging Oligonucleotide Barcode Upper Strand Text
+            Version: '1.00'
+    organ_or_tissue:
+        Enum: []
+        Term:
+        -   Code: '6161035'
+            Origin: caDSR
+            Value: ICD-O Origin of Disease Anatomic Site
+            Version: '1.00'
+    performed_imaging_study_acquisitionTypeCode:
+        Enum: []
+        Term:
+        -   Code: '14670301'
+            Origin: caDSR
+            Value: Image Study Spatial Acquisition Type Code
+            Version: '1.00'
+    performed_imaging_study_admittingDiagnosisCode:
+        Enum: []
+        Term:
+        -   Code: '2902328'
+            Origin: caDSR
+            Value: Image Study Admitting Diagnosis Description 64 Character Text
+            Version: '1.00'
+    performed_imaging_study_algorithmCode:
+        Enum: []
+        Term:
+        -   Code: '14617557'
+            Origin: caDSR
+            Value: Imaging Reconstruction Protocol Algorithm Code Text
+            Version: '1.00'
+    performed_imaging_study_bodyPositionCode:
+        Enum: []
+        Term:
+        -   Code: '14617523'
+            Origin: caDSR
+            Value: Image Study Body Position Name
+            Version: '1.00'
+    performed_imaging_study_cardiacSynchronizationTechniqueCode:
+        Enum: []
+        Term:
+        -   Code: '14617521'
+            Origin: caDSR
+            Value: Image Study Cardiac Synchronization Technique Code Name
+            Version: '1.00'
+    performed_imaging_study_dataCollectionDiameter:
+        Enum: []
+        Term:
+        -   Code: '14612665'
+            Origin: caDSR
+            Value: Image Acquisition Data Collection Location Diameter Number
+            Version: '1.00'
+    performed_imaging_study_description:
+        Enum: []
+        Term:
+        -   Code: '2182389'
+            Origin: caDSR
+            Value: Image Study Description 64 Character Text
+            Version: '2.10'
+    performed_imaging_study_lossyImageCompressionIndicator:
+        Enum: []
+        Term:
+        -   Code: '2659474'
+            Origin: caDSR
+            Value: Image Lossy Compression Code
+            Version: '1.00'
+    performed_imaging_study_nonAcquisitionModalitiesInStudyCode:
+        Enum: []
+        Term:
+        -   Code: '12137353'
+            Origin: caDSR
+            Value: Imaging Technology DICOM Modality Type
+            Version: '1.00'
+    performed_imaging_study_primaryAnatomicSiteCode:
+        Enum: []
+        Term:
+        -   Code: '14612662'
+            Origin: caDSR
+            Value: Image Study Primary Anatomic Site Sequence of Items Text
+            Version: '1.00'
+    performed_imaging_study_reconstructionDiameter:
+        Enum: []
+        Term:
+        -   Code: '2182085'
+            Origin: caDSR
+            Value: Reconstruction Diameter in Millimeter(s)
+            Version: '1.00'
+    performed_imaging_study_reconstructionFieldOfViewHeight:
+        Enum: []
+        Term:
+        -   Code: '14612672'
+            Origin: caDSR
+            Value: Imaging Reconstruction Protocol Field of View Height Number
+            Version: '1.00'
+    performed_imaging_study_reconstructionFieldOfViewWidth:
+        Enum: []
+        Term:
+        -   Code: '14612674'
+            Origin: caDSR
+            Value: Imaging Reconstruction Protocol Field of View Width Number
+            Version: '1.00'
+    performed_imaging_study_reconstructionInterval:
+        Enum: []
+        Term:
+        -   Code: '14612682'
+            Origin: caDSR
+            Value: Imaging Reconstruction Protocol Reconstruction Interval Millimeter
+                Number
+            Version: '1.00'
+    performed_imaging_study_respiratoryMotionTechniqueCode:
+        Enum: []
+        Term:
+        -   Code: '14617522'
+            Origin: caDSR
+            Value: Image Study Respiratory Motion Technique Code Name
+            Version: '1.00'
+    performed_imaging_study_sliceThickness:
+        Enum: []
+        Term:
+        -   Code: '3113185'
+            Origin: caDSR
+            Value: Image Plane Slice Thickness Float or Fixed-point Millimeter Number
+            Version: '2.00'
+    performed_imaging_study_summary:
+        Enum: []
+        Term:
+        -   Code: '14670299'
+            Origin: caDSR
+            Value: Imaging Study Process Protocol Element Summary Text
+            Version: '1.00'
+    performed_imaging_study_typeCode:
+        Enum: []
+        Term:
+        -   Code: '14617551'
+            Origin: caDSR
+            Value: Imaging Reconstruction Protocol Type Code"
+            Version: '1.00'
+    physical_size_x:
+        Enum: []
+        Term:
+        -   Code: '7788945'
+            Origin: caDSR
+            Value: Image Processing Pyramid Representation True False Indicator
+            Version: '1.00'
+    physical_size_y:
+        Enum: []
+        Term:
+        -   Code: '7786585'
+            Origin: caDSR
+            Value: Pixel Y-Dimension Float Value
+            Version: '1.00'
+    physical_size_z:
+        Enum: []
+        Term:
+        -   Code: '7786586'
+            Origin: caDSR
+            Value: Pixel Z-Dimension Float Value
+            Version: '1.00'
+    pyramid:
+        Enum: []
+        Term:
+        -   Code: '7788945'
+            Origin: caDSR
+            Value: Image Processing Pyramid Representation True False Indicator
+            Version: '1.00'
+    rrid_identifier:
+        Enum: []
+        Term:
+        -   Code: '14767247'
+            Origin: caDSR
+            Value: Multiplex Imaging Research Resource Identifier Text
+            Version: '1.00'
+    size_c:
+        Enum: []
+        Term:
+        -   Code: '7794859'
+            Origin: caDSR
+            Value: OME TIFF Channel Count
+            Version: '1.00'
+    size_t:
+        Enum: []
+        Term:
+        -   Code: '7794860'
+            Origin: caDSR
+            Value: OME TIFF Timepoint Count
+            Version: '1.00'
+    size_x:
+        Enum: []
+        Term:
+        -   Code: '7788567'
+            Origin: caDSR
+            Value: OME TIFF X-Dimension Pixel Measurement
+            Version: '1.00'
+    size_y:
+        Enum: []
+        Term:
+        -   Code: '7788568'
+            Origin: caDSR
+            Value: OME TIFF Y-Dimension Pixel Measurement
+            Version: '1.00'
+    size_z:
+        Enum: []
+        Term:
+        -   Code: '7788569'
+            Origin: caDSR
+            Value: OME TIFF Z-Dimension Pixel Measurement
+            Version: '1.00'
+    species:
+        Enum: []
+        Term:
+        -   Code: '10543100'
+            Origin: caDSR
+            Value: NCBI Taxonomy ID
+            Version: '2.00'
+    staining_method:
+        Enum: []
+        Term:
+        -   Code: '7789196'
+            Origin: caDSR
+            Value: Imaging Assay Technology Type
+            Version: '1.00'
+    study_link_id:
+        Enum: []
+    sub_cycle_number:
+        Enum: []
+        Term:
+        -   Code: '14765180'
+            Origin: caDSR
+            Value: Multiplex Imaging Reagent Sub-Cycle Number Integer
+            Version: '1.00'
+    target_name:
+        Enum: []
+        Term:
+        -   Code: '14765180'
+            Origin: caDSR
+            Value: Multiplex Imaging Reagent Sub-Cycle Number Integer
+            Version: '1.00'
+    tissue_fixative:
+        Enum: []
+        Term:
+        -   Code: '65078'
+            Origin: caDSR
+            Value: Specimen Fixative Type
+            Version: '4.00'
+    tumor_tissue_type:
+        Enum: []
+        Term:
+        -   Code: '3288124'
+            Origin: caDSR
+            Value: Tumor Tissue Disease Description Type
+            Version: '1.00'
+    working_distance:
+        Enum: []
+        Term:
+        -   Code: '7788943'
+            Origin: caDSR
+            Value: Microscope Device Working Distance Float Value
+            Version: '1.00'
+Relationships:
+    of_image:
+        Ends:
+        -   Dst: image
+            Props: null
+            Src: MultiplexMicroscopy
+        -   Dst: image
+            Props: null
+            Src: NonDICOMCTimages
+        -   Dst: image
+            Props: null
+            Src: NonDICOMpathologyImages
+        -   Dst: image
+            Props: null
+            Src: NonDICOMMRimages
+        -   Dst: image
+            Props: null
+            Src: NonDICOMradiologyAllModalities
+        -   Dst: image
+            Props: null
+            Src: NonDICOMPETimages
+        Mul: many_to_many
+        Props: null
+Terms:
+    biospecimen_acquisition_method_type:
+        Code: '6626651'
+        Origin: caDSR
+        Value: Biospecimen Acquisition Method Type
+        Version: '2.00'
+    biospecimen_collection_medium_type:
+        Code: '8037927'
+        Origin: caDSR
+        Value: Biospecimen Collection Medium Type
+        Version: '1.00'
+    channel_analysis_metadata_electronic_file_name_text:
+        Code: '7787678'
+        Origin: caDSR
+        Value: Channel Analysis Metadata Electronic File Name Text
+        Version: '1.00'
+    computed_tomography_dose_index_volume_quantity_8_byte_number:
+        Code: '3882991'
+        Origin: caDSR
+        Value: Computed Tomography Dose Index Volume Quantity 8 Byte Number
+        Version: '1.00'
+    computed_tomography_pitch_factor_number:
+        Code: '2414556'
+        Origin: caDSR
+        Value: Computed Tomography Pitch Factor Number
+        Version: '1.00'
+    data_collection_license_type:
+        Code: '14902606'
+        Origin: caDSR
+        Value: Data Collection License Type
+        Version: '1.00'
+    deidentification_method_description_text:
+        Code: '14612655'
+        Origin: caDSR
+        Value: Deidentification Method Description Text
+        Version: '1.00'
+    deidentification_method_type:
+        Code: '14607284'
+        Origin: caDSR
+        Value: Deidentification Method Type
+        Version: '1.00'
+    deidentification_software_name_text:
+        Code: '14612658'
+        Origin: caDSR
+        Value: Deidentification Software Name Text
+        Version: '1.00'
+    electronic_file_pathname_text:
+        Code: '11556141'
+        Origin: caDSR
+        Value: Electronic File Pathname Text
+        Version: '1.00'
+    equipment_manufacturer_model_name_text:
+        Code: '2413274'
+        Origin: caDSR
+        Value: Equipment Manufacturer Model Name Text
+        Version: '2.10'
+    equipment_manufacturer_name_text:
+        Code: '2866141'
+        Origin: caDSR
+        Value: Equipment Manufacturer Name Text
+        Version: '1.00'
+    equipment_software_version_text:
+        Code: '2413278'
+        Origin: caDSR
+        Value: Equipment Software Version Text
+        Version: '1.20'
+    icd-o_origin_of_disease_anatomic_site:
+        Code: '6161035'
+        Origin: caDSR
+        Value: ICD-O Origin of Disease Anatomic Site
+        Version: '1.00'
+    image_acquisition_contrast_type:
+        Code: '14616428'
+        Origin: caDSR
+        Value: Image Acquisition Contrast Type
+        Version: '1.00'
+    image_acquisition_data_collection_location_diameter_number:
+        Code: '14612665'
+        Origin: caDSR
+        Value: Image Acquisition Data Collection Location Diameter Number
+        Version: '1.00'
+    image_acquisition_echo_planar_pulse_sequence_indicator:
+        Code: '14612651'
+        Origin: caDSR
+        Value: Image Acquisition Echo Planar Pulse Sequence Indicator
+        Version: '1.00'
+    image_acquisition_inversion_recovery_indicator:
+        Code: '14607722'
+        Origin: caDSR
+        Value: Image Acquisition Inversion Recovery Indicator
+        Version: '1.00'
+    image_acquisition_pulse_sequence_name_text:
+        Code: '14608594'
+        Origin: caDSR
+        Value: Image Acquisition Pulse Sequence Name Text
+        Version: '1.00'
+    image_acquisition_resonant_nucleus_type:
+        Code: '14616427'
+        Origin: caDSR
+        Value: Image Acquisition Resonant Nucleus Type
+        Version: '1.00'
+    image_acquisition_spin-echo_pulse_sequence_code_category:
+        Code: '14645641'
+        Origin: caDSR
+        Value: Image Acquisition Spin-Echo Pulse Sequence Code Category
+        Version: '1.00'
+    image_acquisition_steady_state_pulse_sequence_type:
+        Code: '14616430'
+        Origin: caDSR
+        Value: Image Acquisition Steady State Pulse Sequence Type
+        Version: '1.00'
+    image_convolution_kernel_16_character_text:
+        Code: '2656119'
+        Origin: caDSR
+        Value: Image Convolution Kernel 16 Character Text
+        Version: '1.00'
+    image_gantry_detector_tilt_16_character_number:
+        Code: '2656117'
+        Origin: caDSR
+        Value: Image Gantry Detector Tilt 16 Character Number
+        Version: '1.00'
+    image_kilovolt_peak_float_16_number:
+        Code: '2904496'
+        Origin: caDSR
+        Value: Image Kilovolt Peak Float 16 Number
+        Version: '1.00'
+    image_lossy_compression_code:
+        Code: '2659474'
+        Origin: caDSR
+        Value: Image Lossy Compression Code
+        Version: '1.00'
+    image_phase_contrast_indicator:
+        Code: '14608601'
+        Origin: caDSR
+        Value: Image Phase Contrast Indicator
+        Version: '1.00'
+    image_plane_slice_thickness_float_or_fixed-point_millimeter_number:
+        Code: '3113185'
+        Origin: caDSR
+        Value: Image Plane Slice Thickness Float or Fixed-point Millimeter Number
+        Version: '2.00'
+    image_processing_pyramid_representation_true_false_indicator:
+        Code: '7788945'
+        Origin: caDSR
+        Value: Image Processing Pyramid Representation True False Indicator
+        Version: '1.00'
+    image_single_collimation_width_8_byte_millimeter_number:
+        Code: '2903347'
+        Origin: caDSR
+        Value: Image Single Collimation Width 8 Byte Millimeter Number
+        Version: '1.00'
+    image_study_admitting_diagnosis_description_64_character_text:
+        Code: '2902328'
+        Origin: caDSR
+        Value: Image Study Admitting Diagnosis Description 64 Character Text
+        Version: '1.00'
+    image_study_body_position_name:
+        Code: '14617523'
+        Origin: caDSR
+        Value: Image Study Body Position Name
+        Version: '1.00'
+    image_study_cardiac_synchronization_technique_code_name:
+        Code: '14617521'
+        Origin: caDSR
+        Value: Image Study Cardiac Synchronization Technique Code Name
+        Version: '1.00'
+    image_study_description_64_character_text:
+        Code: '2182389'
+        Origin: caDSR
+        Value: Image Study Description 64 Character Text
+        Version: '2.10'
+    image_study_primary_anatomic_site_sequence_of_items_text:
+        Code: '14612662'
+        Origin: caDSR
+        Value: Image Study Primary Anatomic Site Sequence of Items Text
+        Version: '1.00'
+    image_study_respiratory_motion_technique_code_name:
+        Code: '14617522'
+        Origin: caDSR
+        Value: Image Study Respiratory Motion Technique Code Name
+        Version: '1.00'
+    image_study_spatial_acquisition_type_code:
+        Code: '14670301'
+        Origin: caDSR
+        Value: Image Study Spatial Acquisition Type Code
+        Version: '1.00'
+    image_total_collimation_width_8_byte_millimeter_number:
+        Code: '2903328'
+        Origin: caDSR
+        Value: Image Total Collimation Width 8 Byte Millimeter Number
+        Version: '1.00'
+    imaging_assay_technology_type:
+        Code: '7789196'
+        Origin: caDSR
+        Value: Imaging Assay Technology Type
+        Version: '1.00'
+    imaging_reconstruction_protocol_algorithm_code_text:
+        Code: '14617557'
+        Origin: caDSR
+        Value: Imaging Reconstruction Protocol Algorithm Code Text
+        Version: '1.00'
+    imaging_reconstruction_protocol_field_of_view_height_number:
+        Code: '14612672'
+        Origin: caDSR
+        Value: Imaging Reconstruction Protocol Field of View Height Number
+        Version: '1.00'
+    imaging_reconstruction_protocol_field_of_view_width_number:
+        Code: '14612674'
+        Origin: caDSR
+        Value: Imaging Reconstruction Protocol Field of View Width Number
+        Version: '1.00'
+    imaging_reconstruction_protocol_reconstruction_interval_millimeter_number:
+        Code: '14612682'
+        Origin: caDSR
+        Value: Imaging Reconstruction Protocol Reconstruction Interval Millimeter
+            Number
+        Version: '1.00'
+    imaging_reconstruction_protocol_type_code":
+        Code: '14617551'
+        Origin: caDSR
+        Value: Imaging Reconstruction Protocol Type Code"
+        Version: '1.00'
+    imaging_study_process_protocol_element_summary_text:
+        Code: '14670299'
+        Origin: caDSR
+        Value: Imaging Study Process Protocol Element Summary Text
+        Version: '1.00'
+    imaging_technique_arterial_spin_labeling_contrast_name:
+        Code: '14616429'
+        Origin: caDSR
+        Value: Imaging Technique Arterial Spin Labeling Contrast Name
+        Version: '1.00'
+    imaging_technique_complex_image_component_type:
+        Code: '14616432'
+        Origin: caDSR
+        Value: Imaging Technique Complex Image Component Type
+        Version: '1.00'
+    imaging_technique_convolution_kernel_group_name:
+        Code: '14617525'
+        Origin: caDSR
+        Value: Imaging Technique Convolution Kernel Group Name
+        Version: '1.00'
+    imaging_technique_ctdi_phantom_type_sequence_of_items_text:
+        Code: '14612683'
+        Origin: caDSR
+        Value: Imaging Technique CTDI Phantom Type Sequence of Items Text
+        Version: '1.00'
+    imaging_technique_diffusion_directionality_type:
+        Code: '14616426'
+        Origin: caDSR
+        Value: Imaging Technique Diffusion Directionality Type
+        Version: '1.00'
+    imaging_technique_exposure_modulation_type:
+        Code: '14617524'
+        Origin: caDSR
+        Value: Imaging Technique Exposure Modulation Type
+        Version: '1.00'
+    imaging_technique_magnetic_field_strength_number:
+        Code: '14607707'
+        Origin: caDSR
+        Value: Imaging Technique Magnetic Field Strength Number
+        Version: '1.00'
+    imaging_technique_mr_diffusion_b_value_number:
+        Code: '14607706'
+        Origin: caDSR
+        Value: Imaging Technique MR Diffusion B Value Number
+        Version: '1.00'
+    imaging_technique_multiple_spin_echo_indicator:
+        Code: '14608595'
+        Origin: caDSR
+        Value: Imaging Technique Multiple Spin Echo Indicator
+        Version: '1.00'
+    imaging_technique_radionuclide_code_text:
+        Code: '14612653'
+        Origin: caDSR
+        Value: Imaging Technique Radionuclide Code Text
+        Version: '1.00'
+    imaging_technique_saturation_recovery_indicator:
+        Code: '14612652'
+        Origin: caDSR
+        Value: Imaging Technique Saturation Recovery Indicator
+        Version: '1.00'
+    imaging_technique_spectrally_selected_suppression_type:
+        Code: '14616431'
+        Origin: caDSR
+        Value: Imaging Technique Spectrally Selected Suppression Type
+        Version: '1.00'
+    imaging_technique_time_of_flight_contrast_indicator:
+        Code: '14608649'
+        Origin: caDSR
+        Value: Imaging Technique Time of Flight Contrast Indicator
+        Version: '1.00'
+    imaging_technology_dicom_modality_type:
+        Code: '12137353'
+        Origin: caDSR
+        Value: Imaging Technology DICOM Modality Type
+        Version: '1.00'
+    longitudinal_study_temporal_event_type:
+        Code: '14670294'
+        Origin: caDSR
+        Value: Longitudinal Study Temporal Event Type
+        Version: '1.00'
+    longitudinal_study_temporal_offset_number:
+        Code: '14612661'
+        Origin: caDSR
+        Value: Longitudinal Study Temporal Offset Number
+        Version: '1.00'
+    microscope_device_immersion_medium_type:
+        Code: '8058286'
+        Origin: caDSR
+        Value: Microscope Device Immersion Medium Type
+        Version: '1.00'
+    microscope_device_lens_numerical_aperture_float_value:
+        Code: '7788942'
+        Origin: caDSR
+        Value: Microscope Device Lens Numerical Aperture Float Value
+        Version: '1.00'
+    microscope_device_nominal_magnification_float_value:
+        Code: '7788940'
+        Origin: caDSR
+        Value: Microscope Device Nominal Magnification Float Value
+        Version: '1.00'
+    microscope_device_objective_lens_text:
+        Code: '7788935'
+        Origin: caDSR
+        Value: Microscope Device Objective Lens Text
+        Version: '1.00'
+    microscope_device_working_distance_float_value:
+        Code: '7788943'
+        Origin: caDSR
+        Value: Microscope Device Working Distance Float Value
+        Version: '1.00'
+    multiplex_imaging_clone_unique_identifier:
+        Code: '14767258'
+        Origin: caDSR
+        Value: Multiplex Imaging Clone Unique Identifier
+        Version: '1.00'
+    multiplex_imaging_emission_bandwidth_number:
+        Code: '14765193'
+        Origin: caDSR
+        Value: Multiplex Imaging Emission Bandwidth Number
+        Version: '1.00'
+    multiplex_imaging_emission_wavelength_number:
+        Code: '14767264'
+        Origin: caDSR
+        Value: Multiplex Imaging Emission Wavelength Number
+        Version: '1.00'
+    multiplex_imaging_excitation_bandwidth_number:
+        Code: '14765190'
+        Origin: caDSR
+        Value: Multiplex Imaging Excitation Bandwidth Number
+        Version: '1.00'
+    multiplex_imaging_excitation_wavelength_number:
+        Code: '14765187'
+        Origin: caDSR
+        Value: Multiplex Imaging Excitation Wavelength Number
+        Version: '1.00'
+    multiplex_imaging_final_concentration_number:
+        Code: '14768386'
+        Origin: caDSR
+        Value: Multiplex Imaging Final Concentration Number
+        Version: '1.00'
+    multiplex_imaging_final_dilution_ratio_number:
+        Code: '14767270'
+        Origin: caDSR
+        Value: Multiplex Imaging Final Dilution Ratio Number
+        Version: '1.00'
+    multiplex_imaging_fluorescent_dye_text:
+        Code: '14767255'
+        Origin: caDSR
+        Value: Multiplex Imaging Fluorescent Dye Text
+        Version: '1.00'
+    multiplex_imaging_isotope_abbreviation_name:
+        Code: '14765198'
+        Origin: caDSR
+        Value: Multiplex Imaging Isotope Abbreviation Name
+        Version: '1.00'
+    multiplex_imaging_isotope_element_number_identifier:
+        Code: '14765201'
+        Origin: caDSR
+        Value: Multiplex Imaging Isotope Element Number Identifier
+        Version: '1.00'
+    multiplex_imaging_oligonucleotide_barcode_lower_strand_text:
+        Code: '14765208'
+        Origin: caDSR
+        Value: Multiplex Imaging Oligonucleotide Barcode Lower Strand Text
+        Version: '1.00'
+    multiplex_imaging_oligonucleotide_barcode_upper_strand_text:
+        Code: '14765205'
+        Origin: caDSR
+        Value: Multiplex Imaging Oligonucleotide Barcode Upper Strand Text
+        Version: '1.00'
+    multiplex_imaging_reagent_cycle_number_integer:
+        Code: '14765176'
+        Origin: caDSR
+        Value: Multiplex Imaging Reagent Cycle Number Integer
+        Version: '1.00'
+    multiplex_imaging_reagent_sub-cycle_number_integer:
+        Code: '14765180'
+        Origin: caDSR
+        Value: Multiplex Imaging Reagent Sub-Cycle Number Integer
+        Version: '1.00'
+    multiplex_imaging_research_resource_identifier_text:
+        Code: '14767247'
+        Origin: caDSR
+        Value: Multiplex Imaging Research Resource Identifier Text
+        Version: '1.00'
+    multiplex_imaging_vendor_catalog_number_text:
+        Code: '14767261'
+        Origin: caDSR
+        Value: Multiplex Imaging Vendor Catalog Number Text
+        Version: '1.00'
+    multiplex_imaging_vendor_lot_number_text:
+        Code: '14769695'
+        Origin: caDSR
+        Value: Multiplex Imaging Vendor Lot Number Text
+        Version: '1.00'
+    ncbi_taxonomy_id:
+        Code: '10543100'
+        Origin: caDSR
+        Value: NCBI Taxonomy ID
+        Version: '2.00'
+    ome_tagged_image_file_format_channel_identifier:
+        Code: '14765171'
+        Origin: caDSR
+        Value: OME Tagged Image File Format Channel Identifier
+        Version: '1.00'
+    ome_tagged_image_file_format_channel_name:
+        Code: '14765172'
+        Origin: caDSR
+        Value: OME Tagged Image File Format Channel Name
+        Version: '1.00'
+    ome_tiff_channel_count:
+        Code: '7794859'
+        Origin: caDSR
+        Value: OME TIFF Channel Count
+        Version: '1.00'
+    ome_tiff_timepoint_count:
+        Code: '7794860'
+        Origin: caDSR
+        Value: OME TIFF Timepoint Count
+        Version: '1.00'
+    ome_tiff_x-dimension_pixel_measurement:
+        Code: '7788567'
+        Origin: caDSR
+        Value: OME TIFF X-Dimension Pixel Measurement
+        Version: '1.00'
+    ome_tiff_y-dimension_pixel_measurement:
+        Code: '7788568'
+        Origin: caDSR
+        Value: OME TIFF Y-Dimension Pixel Measurement
+        Version: '1.00'
+    ome_tiff_z-dimension_pixel_measurement:
+        Code: '7788569'
+        Origin: caDSR
+        Value: OME TIFF Z-Dimension Pixel Measurement
+        Version: '1.00'
+    pixel_y-dimension_float_value:
+        Code: '7786585'
+        Origin: caDSR
+        Value: Pixel Y-Dimension Float Value
+        Version: '1.00'
+    pixel_z-dimension_float_value:
+        Code: '7786586'
+        Origin: caDSR
+        Value: Pixel Z-Dimension Float Value
+        Version: '1.00'
+    raw_data_protocol_or_digital_object_identifier_text:
+        Code: '7787673'
+        Origin: caDSR
+        Value: Raw Data Protocol Or Digital Object Identifier Text
+        Version: '1.00'
+    reconstruction_diameter_in_millimeter(s):
+        Code: '2182085'
+        Origin: caDSR
+        Value: Reconstruction Diameter in Millimeter(s)
+        Version: '1.00'
+    specimen_fixative_type:
+        Code: '65078'
+        Origin: caDSR
+        Value: Specimen Fixative Type
+        Version: '4.00'
+    tissue_slide_ihc_antibody_used_type:
+        Code: '14765184'
+        Origin: caDSR
+        Value: Tissue Slide IHC Antibody Used Type
+        Version: '1.00'
+    tumor_tissue_disease_description_type:
+        Code: '3288124'
+        Origin: caDSR
+        Value: Tumor Tissue Disease Description Type
+        Version: '1.00'
+Version: 1.0.0

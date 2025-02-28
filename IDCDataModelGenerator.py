@@ -1,5 +1,5 @@
 #In theory this will take the Imaging portions of the CDS model and generate a new IDC model.
-import bento_mdf
+import bento_mdf 
 import bento_meta
 import yaml
 
@@ -37,18 +37,18 @@ for node in idcnodes.keys():
         idc_mdf.add_prop(idc_mdf.nodes[node], {'handle': prop, "value_domain":"value_set"})
  
 #And now add Terms for the props
-'''
+
 idcprops = idc_mdf.props
 for prop in idcprops:
     print(prop)
-    if cds_mdf.model.props[prop].concept is not None:
-        #print(cds_mdf.model.props[prop].concept.terms)
-        for termkey, termvalue in cds_mdf.model.props[prop].concept.terms.items():
-            print(f"Key: {termkey}")
-            print(f"Value: {termvalue.get_attr_dict()}")
-'''
-bento_mdf.MDFWriter(idc_mdf).write_mdf(idcmodelfile)
-#print(yaml.dump(bento_mdf.MDFWriter(idc_mdf).write_mdf()))
-#print(yaml.dump(bento_mdf.MDFWriter(idc_mdf).mdf, indent=4))
-#with open(idcmodelfile, 'w') as f:
-#    yaml.dump((bento_mdf.MDFWriter(idc_mdf)),f, indent=4)
+    # if cds_mdf.model.props[prop].concept is not None:
+    #     #print(cds_mdf.model.props[prop].concept.terms)
+    #     for termkey, termvalue in cds_mdf.model.props[prop].concept.terms.items():
+    #         print(f"Key: {termkey}")
+    #         print(f"Value: {termvalue.get_attr_dict()}")
+
+    if cds_mdf.model.props[prop].annotations:
+        for annot in  cds_mdf.model.props[prop].annotations.values():
+            idc_mdf.annotate(idc_mdf.props[prop], annot)
+        
+bento_mdf.MDFWriter(idc_mdf).write_mdf(file="my.mdf")
