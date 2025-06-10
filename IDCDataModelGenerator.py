@@ -1,13 +1,12 @@
 #In theory this will take the Imaging portions of the CDS model and generate a new IDC model.
 import bento_mdf
 import bento_meta
-import yaml
 
 #Point to the main branch in Github.  Should be the production version
 cdsmodelfiles = ['https://raw.githubusercontent.com/CBIIT/cds-model/refs/heads/main/model-desc/cds-model.yml', 'https://raw.githubusercontent.com/CBIIT/cds-model/refs/heads/main/model-desc/cds-model-props.yml']
 idcmodelfile = r".\model-desc\idc-model.yml"
 verionnum = '1.0.0'
-verbose = True
+verbose = False
 
 cds_mdf = bento_mdf.mdf.MDF(*cdsmodelfiles)
 idc_mdf = bento_meta.model.Model(handle="IDC", version=verionnum)
@@ -69,7 +68,3 @@ if verbose:
 
 
 bento_mdf.MDFWriter(idc_mdf).write_mdf(idcmodelfile)
-#print(yaml.dump(bento_mdf.MDFWriter(idc_mdf).write_mdf()))
-#print(yaml.dump(bento_mdf.MDFWriter(idc_mdf).mdf, indent=4))
-#with open(idcmodelfile, 'w') as f:
-#  yaml.dump((bento_mdf.MDFWriter(idc_mdf)),f, indent=4)
